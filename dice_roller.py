@@ -21,6 +21,10 @@ def roll_dice():
                 numbers=random.randint(1,6)
                 print(numbers)
             roll_again=input("Do you want to roll the dice again? ( Y/N ) : ")
+
+            while not(roll_again=="Y" or roll_again=="y" or roll_again=="N" or roll_again=="n"):
+                print("Please enter a valid choice!")
+                roll_again=input("Do you want to roll the dice again? ( Y/N ) : ")
             
             if roll_again=="Y" or roll_again=="y":
                 continue
@@ -31,6 +35,6 @@ def roll_dice():
 
         else:
             print("Please enter a valid number!")
+            continue
         
-
 roll_dice()
