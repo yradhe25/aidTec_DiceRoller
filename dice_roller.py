@@ -26,10 +26,10 @@ def roll_dice():
                 print("Please enter a valid choice!")
                 roll_again=input("Do you want to roll the dice again? ( Y/N ) : ")
             
-            if roll_again=="Y" or roll_again=="y":
+            if roll_again.upper()=="Y":
                 continue
 
-            elif roll_again=="N" or roll_again=="n":
+            elif roll_again.upper()=="N":
                 print("Thank You for using the Dice Roller. Goodbye!")
                 break
 
