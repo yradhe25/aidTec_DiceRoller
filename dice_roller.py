@@ -22,7 +22,7 @@ def roll_dice():
                 print(numbers)
             roll_again=input("Do you want to roll the dice again? ( Y/N ) : ")
 
-            while not(roll_again=="Y" or roll_again=="y" or roll_again=="N" or roll_again=="n"):
+            while not(roll_again.upper()=="Y" or roll_again.upper()=="N"):
                 print("Please enter a valid choice!")
                 roll_again=input("Do you want to roll the dice again? ( Y/N ) : ")
             
